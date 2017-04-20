@@ -1,0 +1,37 @@
+{
+ "definitions": [
+  {
+   "af": 4,
+   "target": "8.8.8.8",
+   "query_argument": "pl.",
+   "description": "DNS hackathon - measuring censorship 3",
+
+   "use_probe_resolver": false,
+   "qbuf": false,
+   "include_abuf": true,
+   "set_rd_bit": true,
+   "resolve_on_probe": false,
+   "type": "dns",
+   "is_public": true,
+   "retry": 0,
+   "prepend_probe_id": false,
+
+   "query_class": "IN",
+   "query_type": "DNSKEY",
+   "set_do_bit": true,
+   "set_cd_bit": false,
+   "set_nsid_bit": false,
+   "protocol": "UDP",
+   "udp_payload_size": 512
+  }
+ ],
+ "probes": [
+  {
+   "type": "probes",
+   "value": "<probes_ids_here>",
+   "requested":0
+  }
+ ],
+ "is_oneoff": true
+}
+
