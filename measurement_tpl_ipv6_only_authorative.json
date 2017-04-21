@@ -1,0 +1,37 @@
+{
+ "definitions": [
+  {
+   "af": 4,
+   "target": "8.8.8.8",
+   "query_argument": "ds.v6ns.test-ipv6.ams.vr.org",
+   "description": "DNS hackathon - measuring censorship ipv6 only authorative",
+
+   "use_probe_resolver": false,
+   "qbuf": false,
+   "include_abuf": true,
+   "set_rd_bit": true,
+   "resolve_on_probe": false,
+   "type": "dns",
+   "is_public": true,
+   "retry": 0,
+   "prepend_probe_id": false,
+
+   "query_class": "IN",
+   "query_type": "AAAA",
+   "set_do_bit": false,
+   "set_cd_bit": false,
+   "set_nsid_bit": false,
+   "protocol": "UDP",
+   "udp_payload_size": 512
+  }
+ ],
+ "probes": [
+  {
+   "type": "probes",
+   "value": "<probes_ids_here>",
+   "requested":0
+  }
+ ],
+ "is_oneoff": true
+}
+
